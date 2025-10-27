@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手稿閱讀器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>手稿閱讀器</h1>
+        <input type="number" id="timerInput" placeholder="設置時間（秒）">
+        <button id="startBtn">開始倒計時</button>
+        <button id="cancelBtn">取消倒計時</button>
+        <br>
+        <textarea id="userText" rows="3" cols="40" placeholder="請輸入要顯示的文本" maxlength="2000"></textarea>
+        <button id="setTextBtn">設定文本</button>
+    </header>
+    <main>
+        <div id="manuscriptContent">
+            <p id="textDisplay">這是要顯示的文本。每隔一段時間會高亮顯示。</p>
+        </div>
+        <div id="countdownDisplay">剩餘時間：<span id="countdown">0</span> 秒</div>
+    </main>
+    <script src="test.js"></script>
+</body>
+</html>
